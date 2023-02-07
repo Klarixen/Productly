@@ -1,10 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
-    position: relative;
     width: 1400px;
     height: 3843px;
     background: #FFFFFF;
     display:block;
+    position: relative;
 }
 p {
     color:#544837;
@@ -12,7 +12,8 @@ p {
 section {
    /* display: flex;
     flex-direction: row;*/
-    position: relative;
+    position:relative;
+    top: 50px;
     width: 70%;
     min-height: 496px;
     margin: auto;
@@ -62,8 +63,8 @@ button {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    height:46px;
-    width: 110px;
+    min-height:46px;
+    min-width: 110px;
     margin: 8px;
 }
 .nav-btn {
@@ -73,9 +74,12 @@ button {
     background-color: white;
     color:#173A56;
     border: solid #173A56 1px;
+    height:46px;
+    width: 110px;
 }
 .signup{
-
+    height:46px;
+    width: 110px;
 }
 
 header {
@@ -87,16 +91,6 @@ header {
     height: 496px;
     left: 136px;
     top: 182px;
-
-    /*display:flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 1400px;
-    height: 78px;
-    left: 0px;
-    top: 20px;
-    margin-top: 20px;*/
-
 }
 
 .head-content{
@@ -114,23 +108,23 @@ h1 {
 
 }
 .btn-start {
-
+    width: 175px;
+    height: 53px;
 }
 .btn-watch {
-
+    width: 175px;
+    height: 53px;
+    color:  #FF9900;
+    background-color: #FFFFFF;
 }
 .head-img {
 
 }
 
 .products__container {
-   /* display: flex;
-    justify-content: center;
-    flex-direction: column;*/
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     align-items: center;
-    position:relative;
     width: 1133px;
     height: 496px;
     left: 136px;
@@ -149,7 +143,7 @@ h3 {
 .products {
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:space-evenly;
     
 }
 .products__click {
@@ -179,28 +173,50 @@ h3 {
 }
 .blueshirt__section {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
+    flex-flow: row;
 }
 .blueshirt__text {
-
+    flex-flow: column wrap;
 }
 .yellowshirt__section {
     display: flex;
     justify-content: center;
 }
 .yellowshirt__text {
-
+ flex-flow:column wrap;
 }
 footer {
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position:relative;
+    width: 1109px;
+    height: 308px;
+}
+.footer-logo {
+    position: absolute;
+    width: 185px;
+    height: 32px;
+    left: 173px;
 }
 .footer-list {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    list-style-type: none;
 
+}
+.input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
 input {
-
+align-self: center;
 }
 .input-btn {
-
+align-self: flex-end;
 }
