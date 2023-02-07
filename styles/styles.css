@@ -1,43 +1,115 @@
 body {
-
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 1400px;
+    height: 3843px;
+    background: #FFFFFF;
+    display:block;
+}
+p {
+    color:#544837;
+}
+section {
+   /* display: flex;
+    flex-direction: row;*/
+    position: relative;
+    width: 70%;
+    min-height: 496px;
+    margin: auto;
+}
+div {
+    display: flex;
 }
 nav {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 1400px;
+    height: 78px;
+    left: 0px;
+    top: 20px;
+    margin-top: 20px;
+}
 
+a {
+    text-decoration: none;
+    color:#544837; 
 }
 .nav-logo {
-
+    position: absolute;
+    left: 143px;
+    width: 185.34px;
+    height: 31.97px;
+}
+.nav-content {
+    display: flex;
 }
 .nav-list {
-
+    height: 28px;
+}
+.nav-list-items {
+    display:inline;
+    height: 28px;
+    margin: 5px;
 }
 button {
-
+    background: #FF9900;
+    color:white;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    height:46px;
+    width: 110px;
+    margin: 8px;
 }
 .nav-btn {
 
 }
 .signin {
-
+    background-color: white;
+    color:#173A56;
+    border: solid #173A56 1px;
 }
 .signup{
 
 }
 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    width: 1133px;
+    height: 496px;
+    left: 136px;
+    top: 182px;
+
+    /*display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 1400px;
+    height: 78px;
+    left: 0px;
+    top: 20px;
+    margin-top: 20px;*/
 
 }
-div {
 
-}
 .head-content{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 h1 {
-
+    color: #2F281E;
 }
-p {
-
+.head-text {
+    color:#544837;
 }
+
 .head-btn {
 
 }
@@ -51,17 +123,34 @@ p {
 
 }
 
-container {
-
-}
 .products__container {
-
+   /* display: flex;
+    justify-content: center;
+    flex-direction: column;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    width: 1133px;
+    height: 496px;
+    left: 136px;
+    top: 182px;
 }
 h3 {
-
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #2F281E;
 }
 .products__header {
-
+}
+.products {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 .products__click {
 
@@ -79,25 +168,32 @@ h3 {
 
 }
 .redshirt__section {
+    display: flex;
+    justify-content: center;
 
 }
 .redshirt__text {
-
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
 }
 .blueshirt__section {
-
+    display: flex;
+    justify-content: center;
 }
 .blueshirt__text {
 
 }
 .yellowshirt__section {
-
+    display: flex;
+    justify-content: center;
 }
 .yellowshirt__text {
 
 }
 footer {
-
+    display: flex;
+    justify-content: center;
 }
 .footer-list {
 
@@ -106,5 +202,5 @@ input {
 
 }
 .input-btn {
-    
+
 }
