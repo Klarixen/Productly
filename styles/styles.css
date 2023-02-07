@@ -10,10 +10,9 @@ p {
     color:#544837;
 }
 section {
-   /* display: flex;
-    flex-direction: row;*/
     position:relative;
-    top: 50px;
+    top: 100px;
+    bottom: 50px;
     width: 70%;
     min-height: 496px;
     margin: auto;
@@ -123,12 +122,9 @@ h1 {
 
 .products__container {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     align-items: center;
-    width: 1133px;
-    height: 496px;
-    left: 136px;
-    top: 182px;
+    justify-content: center;
 }
 h3 {
     font-family: 'Poppins', sans-serif;
@@ -139,6 +135,7 @@ h3 {
     color: #2F281E;
 }
 .products__header {
+    text-align: center;
 }
 .products {
     display:flex;
@@ -146,11 +143,13 @@ h3 {
     justify-content:space-evenly;
     
 }
-.products__click {
-
+.products__bundle {
+    display: flex;
+    flex-direction: column;
 }
-.products__design {
-
+.product-icon {
+    width: 50px;
+    height: 50px;
 }
 .products__preference {
 
@@ -164,7 +163,7 @@ h3 {
 .redshirt__section {
     display: flex;
     justify-content: center;
-
+    align-items: center;
 }
 .redshirt__text {
     display: flex;
@@ -179,6 +178,10 @@ h3 {
 .blueshirt__text {
     flex-flow: column wrap;
 }
+.blueshirt-list {
+    list-style-image: url('images/tick-icon.png')
+    /*I have no idea why this doesnt work*/
+}
 .yellowshirt__section {
     display: flex;
     justify-content: center;
@@ -188,7 +191,7 @@ h3 {
 }
 footer {
     display: flex;
-    justify-content:center;
+    justify-content:flex-end;
     align-items:center;
     flex-direction: row;
     position:relative;
@@ -196,6 +199,8 @@ footer {
     height: 308px;
 }
 .footer-logo {
+    display:flex;
+    align-self:flex-start;
     position: absolute;
     width: 185px;
     height: 32px;
@@ -205,14 +210,14 @@ footer {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: space-between;
+    align-content: space-between;
     list-style-type: none;
 
 }
 .input-section {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: flex-end;
 }
 input {
 align-self: center;
